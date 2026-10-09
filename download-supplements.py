@@ -25,8 +25,8 @@ while remaining:
                 if r.returncode or status!=b'200' or d.get('success') is False or 'data' not in d:raise ValueError()
                 tmp=target.with_suffix('.tmp');tmp.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':')));tmp.replace(target)
                 count+=1
-                print('Saved',entry['id'],flush=True)
-            except Exception:failed.append(entry);print('Retry later',entry['id'],flush=True)
+                print('Saved items this run:',count,flush=True)
+            except Exception:failed.append(entry);print('An item will be retried later',flush=True)
             break
         downloaded=sum((cache/(hashlib.sha256(('reign?'+urlencode({'reign_tongjian_id':x['id']})).encode()).hexdigest()+'.json')).exists() for x in entries.values())
         progress.write_text(json.dumps({'state':'downloading','downloaded':downloaded,'total':len(entries),'time':time.time()}))
