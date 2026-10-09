@@ -19,7 +19,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 download-supplements.py
+      - name: Check text completeness
+        id: texts
+        run: |
+          python3 - <<'PY'
+          import json,hashlib,os
+          from pathlib import Path
+          from urllib.parse import urlencode
+          entries=json.loads(Path('data/reference-map.json').read_text())['segments']
+          complete=True
+          for e in entries.values():
+              p=Path('data/reference-cache')/(hashlib.sha256(('reign?'+urlencode({'reign_tongjian_id':e['id']})).encode()).hexdigest()+'.json')
+              try:
+                  d=json.loads(p.read_text())
+                  if d.get('success') is False or 'data' not in d:complete=False
+              except Exception:complete=False
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('complete='+str(complete).lower()+'\n')
+          PY
       - run: python3 download-maps.py
+        if: steps.texts.outputs.complete == 'true'
       - name: Refresh static cache index
         run: |
           python3 - <<'PY'
@@ -31,7 +49,9 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add assets/history-maps data/local-maps.json data/reference-cache data/reference-cache-index.json
+          git add data/reference-cache data/reference-cache-index.json
+          if [ -f data/local-maps.json ]; then git add data/local-maps.json; fi
+          if [ -d assets/history-maps ]; then git add assets/history-maps; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Save historical maps and labels'
             git pull --rebase origin main
