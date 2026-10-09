@@ -1,0 +1,36 @@
+name: Download historical maps
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 * * * *'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: historical-map-download
+  cancel-in-progress: false
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 download-maps.py
+      - name: Save downloaded maps
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add assets/history-maps data/local-maps.json data/reference-cache
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save historical maps and labels'
+            git pull --rebase origin main
+            git push origin main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - uses: actions/deploy-pages@v4
