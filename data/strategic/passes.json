@@ -1,0 +1,421 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"title": "山海关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [119.7965097, 39.9750446]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "居庸关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.073719, 40.2912403]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "紫荆关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [115.1770158, 39.4269791]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "飞狐口"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.6334189, 39.7401403]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "倒马关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.6381088, 39.0898241]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "井陉关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.2867872, 38.0741517]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "娘子关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.8710321, 37.9627771]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "滏口"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.2832815, 36.6627248]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "天井关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.8179621, 35.3546258]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "轵关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.3460537, 35.1165637]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "孟津"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.6250453, 34.8328593]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "新安函谷关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.1770487, 34.7183808]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "函谷关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.9270643, 34.637759]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "潼关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.2808469, 34.5931257]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "风陵渡"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.3126169, 34.6287936]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "蒲津渡"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.2611736, 34.8084495]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "萧关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.377788, 35.6772819]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "大散关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [107.0138798, 34.272972]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "黄河龙门（禹门口）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.6031033, 35.6596566]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "偏关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.4992579, 39.4404604]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "玉门关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [97.1758523, 40.3897413]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "嘉峪关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [98.2898896, 39.7734564]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "古阳平关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.614209, 33.1463575]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "阳平关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.0517538, 32.9717376]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "白水关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.5108565, 32.6824172]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "七盘关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.1106486, 32.7223122]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "葭荫关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.7188444, 32.3393534]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "剑阁"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.5242416, 32.2874142]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "剑门关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.5665623, 32.2111257]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "江油关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.8329688, 32.2006848]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "白马关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.467814, 31.2922124]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "雁门关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.8508689, 39.1926626]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "武关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.6272002, 33.5998505]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "瞿塘关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [109.5845507, 31.0398381]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "伊阙关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.4777597, 34.553355]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "太谷关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.6542332, 34.5107968]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "轘辕关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.9405401, 34.5308791]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "广成关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.6022421, 34.2601874]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "虎牢关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.1366317, 34.867907]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "穆陵关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [118.7157321, 36.1605787]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "清睢口"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [118.277697, 33.9388543]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "泗口"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [118.9016342, 33.5189515]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "瓜洲渡"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [119.6755483, 32.2856549]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "采石渡"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [118.3716323, 31.7014758]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "涡口"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [117.205609, 32.9587868]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "颍口"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.5202436, 32.4924306]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "九里关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.2323138, 31.8691629]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "武胜关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.0222194, 31.7740442]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "平靖关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.9651531, 31.9023277]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "天门关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.4470723, 38.0708158]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "石岭关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.7507133, 38.244887]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "赤塘关"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.5855166, 38.2580175]
+      }
+    }
+  ]
+}

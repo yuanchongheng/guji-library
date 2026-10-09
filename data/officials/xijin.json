@@ -1,0 +1,119 @@
+{
+  "id": "xijin",
+  "title": "西晋官制",
+  "meta": {
+    "period": "公元265年—316年",
+    "notes": [
+      "承汉魏官制并确立八公与三省制，尚书省为最高行政机关",
+      "州—郡—县制与王公封国并行，中央掌握中军与五校"
+    ]
+  },
+  "root": {
+    "id": "jin_emperor",
+    "name": "晋皇帝",
+    "type": "sovereign",
+    "description": "太始改制后，皇帝倚赖尚书省与中书、门下统筹朝政，三公渐虚。",
+    "children": [
+      {
+        "id": "jin_central",
+        "name": "中央三省",
+        "type": "central_branch",
+        "description": "太宰、太傅、太保与太尉、司徒、司空合称八公；尚书、中书、门下三省共议大政。",
+        "children": [
+          {
+            "id": "jin_shangshu",
+            "name": "尚书省",
+            "type": "central_outer",
+            "description": "最高行政机构，设尚书令、左右仆射、左右丞，下辖六曹尚书与三十四曹郎。",
+            "details": {
+              "responsibility": [
+                "吏部、三公、客、驾部、屯田、度支等曹具体执行官吏铨选、财政征调",
+                "尚书郎二十三人分曹署案，处理日常文书"
+              ]
+            }
+          },
+          {
+            "id": "jin_zhongshu",
+            "name": "中书省",
+            "type": "central_inner",
+            "description": "设中书监、中书令与中书侍郎，掌机密诏敕草拟。",
+            "details": { "notes": "与门下省共居北省，晋代多以“录尚书事”主持三省会议。" }
+          },
+          {
+            "id": "jin_menxia",
+            "name": "门下省",
+            "type": "central_inner",
+            "description": "正式成立的审核机构，辖侍中、散骑常侍、给事黄门侍郎等官，负责顾问与封驳。",
+            "details": { "notes": "门下省与中书共同在政事堂议政，兼掌传诏与仪制。"}
+          }
+        ]
+      },
+      {
+        "id": "jin_externals",
+        "name": "列卿与监察",
+        "type": "palace",
+        "description": "九卿与太常、大鸿胪等卿寺沿袭汉制，御史台负责监察百官。",
+        "children": [
+          {
+            "id": "jin_lieqing",
+            "name": "列卿",
+            "type": "group",
+            "description": "太常、光禄勋、卫尉、太仆、廷尉、大鸿胪、宗正、大司农、少府、将作大匠、太后三卿、大长秋等，配丞、功曹、主簿。"
+          },
+          {
+            "id": "jin_yushi",
+            "name": "御史台",
+            "type": "office",
+            "description": "由御史中丞主理，属官包括殿中侍御史、侍御史与治书侍御史，负责监察与弹劾。"
+          }
+        ]
+      },
+      {
+        "id": "jin_rank",
+        "name": "爵位与兵制",
+        "type": "system",
+        "description": "爵位分王、公、侯、伯、子、男六等，军制设中军外军与七军五校。",
+        "children": [
+          {
+            "id": "jin_ranks",
+            "name": "爵位系统",
+            "type": "system_item",
+            "description": "官阶以品秩与石相结合，王公贵族受封国，散官形式延续汉制。"
+          },
+          {
+            "id": "jin_military",
+            "name": "七军五校",
+            "type": "system_item",
+            "description": "中央军由中领军、中军将军统率左、右、前、后、骁骑等七军以及屯骑、越骑、步兵、长水、射声五校尉。"
+          }
+        ]
+      },
+      {
+        "id": "jin_local",
+        "name": "地方行政",
+        "type": "local",
+        "description": "州—郡—县三级制维持，同时有封国王公体系。",
+        "children": [
+          {
+            "id": "jin_province",
+            "name": "州",
+            "type": "local_level",
+            "description": "置州刺史掌监督郡县政务，配别驾、治中从事等僚属。"
+          },
+          {
+            "id": "jin_commanderies",
+            "name": "郡",
+            "type": "local_level",
+            "description": "郡守主持政务，配太守、郡丞与功曹、主簿等，受州刺史节制。"
+          },
+          {
+            "id": "jin_county",
+            "name": "县",
+            "type": "local_level",
+            "description": "县令、县丞、县尉分掌行政、文书与治安，仍设乡里基层。"
+          }
+        ]
+      }
+    ]
+  }
+}

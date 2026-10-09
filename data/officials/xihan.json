@@ -1,0 +1,245 @@
+{
+  "id": "xihan",
+  "title": "西汉官制",
+  "meta": {
+    "period": "前206年—公元8年",
+    "notes": [
+      "汉承秦制，形成外朝/内朝并行结构",
+      "地方实行郡县与封国并行的郡国制"
+    ]
+  },
+  "legend": [
+    { "type": "sovereign", "label": "最高统治者", "color": "#c19c00" },
+    { "type": "central_outer", "label": "中央外朝", "color": "#1f5aa0" },
+    { "type": "central_inner", "label": "中央内朝", "color": "#cb4c3b" },
+    { "type": "palace", "label": "宫官体系", "color": "#8b5fb3" },
+    { "type": "local", "label": "地方官制", "color": "#4d8731" },
+    { "type": "fief", "label": "诸侯/封国", "color": "#a46b00" },
+    { "type": "system", "label": "制度补充", "color": "#666666" }
+  ],
+  "root": {
+    "id": "emperor",
+    "name": "皇帝",
+    "type": "sovereign",
+    "node_kind": "office",
+    "description": "军政最高统辖，统摄内外朝及全国郡国。",
+    "children": [
+      {
+        "id": "central_branch",
+        "name": "中央",
+        "type": "central_branch",
+        "node_kind": "category",
+        "description": "皇帝直接统领的中枢系统，分外朝与内朝。",
+        "children": [
+          {
+            "id": "outer_court",
+            "name": "外朝官",
+            "type": "central_outer",
+            "node_kind": "category",
+            "description": "以丞相为首，处理国家政务、军政统筹。",
+            "children": [
+              {
+                "id": "chancellor",
+                "name": "丞相（相国/大司徒）",
+                "type": "office",
+                "node_kind": "office",
+                "description": "外朝首长，秩万石，主持廷议、统管百官，执行诏令。",
+                "details": {
+                  "rank": "秩万石",
+                  "responsibility": [
+                    "主持六百石以上官员会议并上奏",
+                    "掌选举任官、黜陟刑赏",
+                    "署理全国政令执行"
+                  ]
+                },
+                "children": [
+                  {
+                    "id": "chief_clerk",
+                    "name": "长史",
+                    "type": "suboffice",
+                    "node_kind": "office",
+                    "description": "秩千石，统丞相府诸曹，负责文书与监察。",
+                    "notes": ["征和二年分左右府以待远方荐举。"]
+                  },
+                  {
+                    "id": "sizhih",
+                    "name": "司直",
+                    "type": "suboffice",
+                    "node_kind": "office",
+                    "description": "武帝元狩五年置，位在司隶校尉上，佐丞相举不法。",
+                    "notes": ["掌纠察百官、巡视京师。"]
+                  },
+                  {
+                    "id": "various_cao",
+                    "name": "诸曹掾属",
+                    "type": "suboffice",
+                    "node_kind": "office",
+                    "description": "东、西、奏、议、侍、集等曹分掌任免、奏章、谋划、接待等事务。",
+                    "notes": ["掾属约三百人，长史总领。"]
+                  }
+                ]
+              },
+              {
+                "id": "taiwei",
+                "name": "太尉 / 大司马",
+                "type": "office",
+                "node_kind": "office",
+                "description": "最高武职，掌武事、评定武官功过，权臣常以大司马领尚书事。",
+                "details": { "notes": ["秩与丞相同，属吏有长史、司直等。"] }
+              },
+              {
+                "id": "yushidafu",
+                "name": "御史大夫 / 大司空",
+                "type": "office",
+                "node_kind": "office",
+                "description": "副丞相兼最高监察官，统御史、刺史，复核刑狱与会计。",
+                "details": { "notes": ["两丞：御史丞、御史中丞；掌图籍、受奏劾。"] }
+              },
+              {
+                "id": "nine_ministers",
+                "name": "九卿",
+                "type": "group",
+                "node_kind": "category",
+                "description": "负责宗庙、宫廷、财政、律法等专业行政事务。",
+                "children": [
+                  { "id": "taichang", "name": "太常", "type": "office", "node_kind": "office", "description": "掌宗庙礼仪、伎乐、星历等。属官遍及六署。"},
+                  { "id": "guanglukun", "name": "光禄勋", "type": "office", "node_kind": "office", "description": "掌宫殿门户、郎官、期门、羽林等宿卫。"},
+                  { "id": "weiwei", "name": "卫尉", "type": "office", "node_kind": "office", "description": "掌宫门守卫与公车司马、卫士令等属官。"},
+                  { "id": "taipu", "name": "太仆", "type": "office", "node_kind": "office", "description": "掌乘舆与马政，统牧师诸苑三十六所。"},
+                  { "id": "tingwei", "name": "廷尉", "type": "office", "node_kind": "office", "description": "掌刑辟，终审全国疑难案件。"},
+                  { "id": "dahonglu", "name": "大鸿胪", "type": "office", "node_kind": "office", "description": "掌外宾礼仪、属国事务。"},
+                  { "id": "zongzheng", "name": "宗正", "type": "office", "node_kind": "office", "description": "掌宗室谱籍、亲属秩序与司法。"},
+                  { "id": "dasinong", "name": "大司农", "type": "office", "node_kind": "office", "description": "全国财政首长，管田赋、盐铁、平准均输与漕运。"},
+                  { "id": "shaofu", "name": "少府", "type": "office", "node_kind": "office", "description": "掌皇帝及宫廷财政、器物、工匠等。"}
+                ]
+              },
+              {
+                "id": "lieqing",
+                "name": "列卿",
+                "type": "group",
+                "node_kind": "category",
+                "description": "执金吾、将作大匠、水衡都尉等专门机构，补充九卿职能。",
+                "children": [
+                  { "id": "zhijinqu", "name": "执金吾", "type": "office", "node_kind": "office", "description": "掌京师巡逻、宫门屯兵。"},
+                  { "id": "jiangzuo", "name": "将作大匠", "type": "office", "node_kind": "office", "description": "主管宫室、宗庙、陵园等营造。"},
+                  { "id": "shuiheng", "name": "水衡都尉", "type": "office", "node_kind": "office", "description": "掌上林苑与御用水利。"}
+                ]
+              }
+            ]
+          },
+          {
+            "id": "inner_court",
+            "name": "内朝官",
+            "type": "central_inner",
+            "node_kind": "category",
+            "description": "近侍皇帝，处理机要文书、宿卫与内廷事务。",
+            "children": [
+              { "id": "grand_general", "name": "大将军领尚书事", "type": "office", "node_kind": "office", "description": "武帝后权重，主持尚书台决策。"},
+              { "id": "shangshuling", "name": "尚书令", "type": "office", "node_kind": "office", "description": "掌收受章奏、宣诏命，统民曹、主客曹等。"},
+              { "id": "zhongshuyezhe", "name": "中书谒者令", "type": "office", "node_kind": "office", "description": "宦官近侍，掌诏命传达与尚书事务。"},
+              { "id": "fuji", "name": "符节令", "type": "office", "node_kind": "office", "description": "掌铜虎符、竹使符的收发与勘合。"},
+              { "id": "huangmen", "name": "黄门令", "type": "office", "node_kind": "office", "description": "掌宫省宦者与内廷门户，传递书奏。"},
+              { "id": "other_inner", "name": "尚书郎与中朝宿卫", "type": "group", "node_kind": "category", "children": [
+                { "id": "shangshulang", "name": "尚书郎", "type": "office", "node_kind": "office", "description": "处理日常奏章、文书。"},
+                { "id": "shizhong", "name": "侍中/常侍", "type": "office", "node_kind": "office", "description": "近侍皇帝，参与议政。"}
+              ]}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "palace_branch",
+        "name": "宫官体系",
+        "type": "palace",
+        "node_kind": "category",
+        "description": "皇后、太子及宫廷日常事务机构。",
+        "children": [
+          { "id": "zhan", "name": "詹事", "type": "office", "node_kind": "office", "description": "掌皇后、太子家政，有丞与率更、家令等属官。"},
+          { "id": "dalchangqiu", "name": "大长秋", "type": "office", "node_kind": "office", "description": "皇后宫官，掌内廷经济、永巷等。"},
+          { "id": "changxin", "name": "长信詹事 / 长乐少府", "type": "office", "node_kind": "office", "description": "掌皇太后宫务。"},
+          { "id": "taizifushi", "name": "太子太傅/少傅", "type": "office", "node_kind": "office", "description": "负责教导、辅弼太子，属官有门大夫、洗马等。"}
+        ]
+      },
+      {
+        "id": "local_branch",
+        "name": "地方官制",
+        "type": "local",
+        "node_kind": "category",
+        "description": "郡县与郡国并行的基层行政体系。",
+        "children": [
+          {
+            "id": "jun_admin",
+            "name": "郡官",
+            "type": "local_level",
+            "node_kind": "category",
+            "description": "郡设太守、都尉、监御史三官，分掌政务、军务、监察。",
+            "children": [
+              { "id": "taishou", "name": "太守", "type": "local_office", "node_kind": "office", "description": "郡最高长官，秩二千石，掌郡政、任免属吏、持虎符节制驻军。"},
+              { "id": "duwei_local", "name": "都尉", "type": "local_office", "node_kind": "office", "description": "掌武职与郡驻军，边郡分置部都尉。"},
+              { "id": "jian_yushi", "name": "监御史", "type": "local_office", "node_kind": "office", "description": "监察太守与郡县官，奏劾不法。"}
+            ]
+          },
+          {
+            "id": "xian_admin",
+            "name": "县官",
+            "type": "local_level",
+            "node_kind": "category",
+            "description": "县令/县长为基层行政长官，下设丞、尉等。",
+            "children": [
+              { "id": "xianling", "name": "县令/县长", "type": "local_office", "node_kind": "office", "description": "掌县政，令秩六百以上，长秩三百石。"},
+              { "id": "xiancheng", "name": "县丞", "type": "local_office", "node_kind": "office", "description": "主管文书、仓库、狱政。"},
+              { "id": "xianwei", "name": "县尉", "type": "local_office", "node_kind": "office", "description": "掌地方治安与缉捕。"}
+            ]
+          },
+          {
+            "id": "cishi_admin",
+            "name": "刺史/司隶校尉",
+            "type": "local_supervision",
+            "node_kind": "office",
+            "description": "武帝元封五年置十三州刺史，巡行诸郡，以六条诏书纠察；三辅由司隶校尉监督。"
+          },
+          {
+            "id": "three_aux",
+            "name": "三辅",
+            "type": "local_special",
+            "node_kind": "category",
+            "description": "京兆尹、左冯翊、右扶风，位同列卿，管理长安周边地方政务。"
+          }
+        ]
+      },
+      {
+        "id": "fief_branch",
+        "name": "郡国/诸侯国",
+        "type": "fief",
+        "node_kind": "category",
+        "description": "郡县之外的封国体系，诸侯王、列侯拥有封邑但逐步受中央节制。",
+        "children": [
+          { "id": "princes", "name": "诸侯王", "type": "fief_office", "node_kind": "office", "description": "同姓封王，早期自置官属，景帝后行政权归天子任命的相。"},
+          { "id": "marquis", "name": "列侯", "type": "fief_office", "node_kind": "office", "description": "功臣封爵，享封邑税收；景帝后仅保留采邑收益。"}
+        ]
+      },
+      {
+        "id": "systems_branch",
+        "name": "制度补充",
+        "type": "system",
+        "node_kind": "category",
+        "children": [
+          {
+            "id": "rank_system",
+            "name": "爵禄制度",
+            "type": "system_item",
+            "node_kind": "section",
+            "description": "沿秦二十等爵，并设武功爵；秩禄以石数为单位，三公万石不入秩。"
+          },
+          {
+            "id": "selection_system",
+            "name": "选举制度",
+            "type": "system_item",
+            "node_kind": "section",
+            "description": "举孝廉、贤良方正、明经明法等科目并行，奠定文官选拔基础。"
+          }
+        ]
+      }
+    ]
+  }
+}

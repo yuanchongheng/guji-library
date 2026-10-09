@@ -1,0 +1,191 @@
+{
+  "id": "zhou",
+  "title": "周朝官制",
+  "meta": {
+    "period": "概括西周—春秋—战国",
+    "notes": [
+      "宗法与分封相结合，周天子统御诸侯、卿大夫、士的等级序列",
+      "《周礼》六官与战国郡县制展示从宗法政体到官僚集权的演进"
+    ]
+  },
+  "root": {
+    "id": "zhou_tianzi",
+    "name": "周天子",
+    "type": "sovereign",
+    "description": "以宗法维系天下，透过三公、冢宰与六卿执掌中央政务，并分封诸侯治理四方。",
+    "children": [
+      {
+        "id": "zhou_court",
+        "name": "天朝政制",
+        "type": "central_branch",
+        "description": "西周时期的中央机构，以三公与太宰为核心，辅以六卿、五官及宫内职官。",
+        "children": [
+          {
+            "id": "zhou_three_dukes",
+            "name": "三公与太宰",
+            "type": "office",
+            "description": "太师、太傅、太保共称三公，名义上辅佐天子；太宰掌总政务，位居权力中枢，周公摄政时期兼任冢宰。"
+          },
+          {
+            "id": "zhou_liu_qing",
+            "name": "六卿 / 五官",
+            "type": "group",
+            "description": "分掌国家诸务，下辖大都、小伯、艺人、表臣百司、太史、尹伯、庶常吉士等基层吏员。"
+          },
+          {
+            "id": "zhou_palace",
+            "name": "宫内专官",
+            "type": "palace",
+            "description": "虎贲为王家禁军；缀衣理服饰；趣马掌车马；小尹、携仆、百司、庶府管理王室内务与财物。"
+          },
+          {
+            "id": "zhou_late_court",
+            "name": "春秋正卿与霸政",
+            "type": "office",
+            "description": "春秋后期中央执政者称正卿/冢宰，王室衰落后由齐桓、晋文等“春秋五霸”奉天子号令诸侯。"
+          }
+        ]
+      },
+      {
+        "id": "zhou_ritual_system",
+        "name": "《周礼》六官制度",
+        "type": "system",
+        "description": "以冢宰为首的天地四时六官体制，代表周人理想化的行政架构。",
+        "children": [
+          {
+            "id": "zhou_tianguan",
+            "name": "天官冢宰",
+            "type": "system_item",
+            "description": "掌邦治，统太宰、小宰、宰夫、六典（治、教、礼、政、刑、事）以佐王理邦国。"
+          },
+          {
+            "id": "zhou_diguan",
+            "name": "地官司徒",
+            "type": "system_item",
+            "description": "掌邦教，管理版籍田土、百姓安抚，属官含大司徒、小司徒、乡师等。"
+          },
+          {
+            "id": "zhou_chunguang",
+            "name": "春官宗伯",
+            "type": "system_item",
+            "description": "掌邦礼与宗庙继承，辖大宗伯、小宗伯、肆师等。"
+          },
+          {
+            "id": "zhou_xiaguan",
+            "name": "夏官司马",
+            "type": "system_item",
+            "description": "掌邦政（军政），统大司马、小司马、军司马等，负责王室军队。"
+          },
+          {
+            "id": "zhou_qiuguan",
+            "name": "秋官司寇",
+            "type": "system_item",
+            "description": "掌邦禁与刑狱，设大司寇、小司寇、士师等。"
+          },
+          {
+            "id": "zhou_dongguan",
+            "name": "冬官司空",
+            "type": "system_item",
+            "description": "《周礼》司空篇已佚，后世以司空掌土木工程、城防营建。"
+          }
+        ]
+      },
+      {
+        "id": "zhou_feudal",
+        "name": "分封与诸侯体系",
+        "type": "local",
+        "description": "宗法等级自天子、诸侯、卿大夫、士逐级传承，官职等级与采邑世袭结合。",
+        "children": [
+          {
+            "id": "zhou_lineage",
+            "name": "宗法等级",
+            "type": "section",
+            "description": "天子建国、诸侯立家、卿置侧室、大夫有贰宗、士有隶子弟，皆为宗族首领并掌采邑。"
+          },
+          {
+            "id": "zhou_states",
+            "name": "诸侯国政制",
+            "type": "local_level",
+            "description": "诸侯国设司徒、司马、司空、司寇治民治军并掌刑狱，卿大夫辅佐诸侯治理封国。"
+          },
+          {
+            "id": "zhou_guoye",
+            "name": "国野制与县制",
+            "type": "local_level",
+            "description": "国中设轨、里、连、乡等组织；野间分邑、卒、乡、县、属，春秋后期普遍设置县并由大夫治理。"
+          },
+          {
+            "id": "zhou_fiefs",
+            "name": "卿大夫封邑",
+            "type": "fief",
+            "description": "卿大夫拥有世袭家邑，邑宰为家臣，鲁三桓、晋六卿等家臣甚至把持国政。"
+          }
+        ]
+      },
+      {
+        "id": "zhou_warring_states",
+        "name": "战国体制",
+        "type": "system",
+        "description": "兼并战争催生郡县制与职业官僚，君权与常备军加强，官爵制度转变。",
+        "children": [
+          {
+            "id": "zhou_warring_central",
+            "name": "诸国中央政制",
+            "type": "system_item",
+            "description": "丞相（或相邦）成为百官之长；列国设将军体系；世卿世禄废除但爵位仍存，秦设二十等爵。"
+          },
+          {
+            "id": "zhou_warring_local",
+            "name": "郡县制",
+            "type": "local_level",
+            "description": "县直属国君，郡由太守统军政并辖县；齐国设五都，秦边地置郡，形成郡县二级制。"
+          },
+          {
+            "id": "zhou_county_offices",
+            "name": "县级职官",
+            "type": "local_office",
+            "description": "县令（或大啬夫）为长，县丞、县尉、司马（养马）、司空（营建/刑徒）分掌政务；秦偏县称“道”，内史直辖“都”。"
+          },
+          {
+            "id": "zhou基层",
+            "name": "乡亭与关市",
+            "type": "local_special",
+            "description": "乡有啬夫，里有三老；要地设亭长；另有关吏、津吏、市掾、河丞等专司交通与市场。"
+          }
+        ]
+      },
+      {
+        "id": "zhou_chu",
+        "name": "楚国特殊体制",
+        "type": "local_special",
+        "description": "南方楚国文化与中原不同，形成独特的爵位与政制。",
+        "children": [
+          {
+            "id": "zhou_chu_ranks",
+            "name": "爵位与官称",
+            "type": "section",
+            "description": "早期无卿大夫称号，爵位如敖、执圭、执帛，凭军功授予，难以世袭。"
+          },
+          {
+            "id": "zhou_chu_central",
+            "name": "中央政制",
+            "type": "section",
+            "description": "莫敖为早期执政，后设令尹统政兼统军，辅以左、右尹和司马；屈原任左徒掌田赋与外交，司败理刑，三闾大夫主管宗族。"
+          },
+          {
+            "id": "zhou_chu_palace",
+            "name": "宫廷官职",
+            "type": "palace",
+            "description": "太师教育王子；司宫为宦官管理后宫杂役。"
+          },
+          {
+            "id": "zhou_chu_local",
+            "name": "地方与郡县",
+            "type": "local_level",
+            "description": "楚早期设县（县公/县尹/县大夫）并配县司马，战国中期在边地设郡，郡守多为武将。"
+          }
+        ]
+      }
+    ]
+  }
+}

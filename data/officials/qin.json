@@ -1,0 +1,235 @@
+{
+  "id": "qin",
+  "title": "秦朝官制",
+  "meta": {
+    "period": "前221年—前207年",
+    "notes": [
+      "皇帝集军政大权，三公九卿的分工奠定后世官制基础",
+      "郡县—乡—亭—里的四级体系覆盖地方基层"
+    ]
+  },
+  "root": {
+    "id": "qin_emperor",
+    "name": "皇帝",
+    "type": "sovereign",
+    "description": "始皇帝建立华夏首个中央集权帝制，统辖中央三公九卿与全国郡县。",
+    "children": [
+      {
+        "id": "qin_central",
+        "name": "中央枢纽",
+        "type": "central_branch",
+        "node_kind": "category",
+        "description": "以三公、九卿与列卿为骨干，分掌军政、监察、宗庙与宫廷事务。",
+        "children": [
+          {
+            "id": "qin_san_gong",
+            "name": "三公",
+            "type": "central_outer",
+            "node_kind": "category",
+            "children": [
+              {
+                "id": "qin_chancellor",
+                "name": "丞相 / 相国",
+                "type": "office",
+                "description": "最高行政长官，掌丞天子助理万机，下统百官并主持议政，秩万石。",
+                "details": {
+                  "responsibility": [
+                    "承受诏令并执行政令",
+                    "主持对郡守县令的任免与考课",
+                    "统领相府诸曹，含长史、司直及掾属"
+                  ]
+                }
+              },
+              {
+                "id": "qin_taiwei",
+                "name": "太尉",
+                "type": "office",
+                "description": "由“国尉”改置，最高军事顾问。国家大征伐时受命统筹军务。",
+                "details": { "notes": "多在重大军事行动时临时任命，事毕常罢。" }
+              },
+              {
+                "id": "qin_yushi",
+                "name": "御史大夫",
+                "type": "office",
+                "description": "副丞相兼最高监察官，掌银印青绶，统御史丞与御史中丞，纠察百官。",
+                "details": {
+                  "responsibility": [
+                    "指挥侍御史、诸郡监御史巡按",
+                    "覆核刑狱与奏章",
+                    "代皇帝封驳不当政令"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "qin_jiuqing",
+            "name": "九卿",
+            "type": "central_outer",
+            "node_kind": "category",
+            "description": "分掌宗庙、宿卫、司法、财政、宗室等专署，秩中二千石。",
+            "children": [
+              {
+                "id": "qin_fengchang",
+                "name": "奉常",
+                "type": "office",
+                "description": "掌宗庙祭祀与礼乐，辖太乐、太祝、太宰、太医、太史、太卜等署。"
+              },
+              {
+                "id": "qin_langzhongling",
+                "name": "郎中令",
+                "type": "office",
+                "description": "掌殿中议论、受奏与宿卫，统谏议大夫、谒者、郎官与禁卫军。"
+              },
+              {
+                "id": "qin_weiwei",
+                "name": "卫尉",
+                "type": "office",
+                "description": "掌皇宫诸门屯兵，辖公车司马令与卫士令，负责宫廷门户与贡赋车辆。"
+              },
+              {
+                "id": "qin_taipu",
+                "name": "太仆",
+                "type": "office",
+                "description": "掌乘舆车马与皇家牧马苑，统御马政官。"
+              },
+              {
+                "id": "qin_tingwei",
+                "name": "廷尉",
+                "type": "office",
+                "description": "最高司法官，署有廷尉丞并管理廷尉狱，审理重案。"
+              },
+              {
+                "id": "qin_dianke",
+                "name": "典客",
+                "type": "office",
+                "description": "管理诸侯、少数民族朝觐以及上计官奉命进京的接待。"
+              },
+              {
+                "id": "qin_zongzheng",
+                "name": "宗正",
+                "type": "office",
+                "description": "掌皇族谱牒、亲属秩序，宗室犯法则绝其属籍。"
+              },
+              {
+                "id": "qin_neishi",
+                "name": "治粟内史",
+                "type": "office",
+                "description": "国库总管，掌谷物、金玉储藏，辖太仓令和平准令调节物价。"
+              },
+              {
+                "id": "qin_shaofu",
+                "name": "少府",
+                "type": "office",
+                "description": "掌皇帝私府、宫廷日用与工匠，辖尚衣、尚食、尚书、中书谒者等机构。"
+              }
+            ]
+          },
+          {
+            "id": "qin_lieqing",
+            "name": "列卿与宫廷属官",
+            "type": "palace",
+            "node_kind": "category",
+            "description": "列卿如中尉、将作少府、典属国、詹事等，负责宿卫、营建与太子宫官。",
+            "children": [
+              {
+                "id": "qin_zhongwei",
+                "name": "中尉",
+                "type": "office",
+                "description": "掌京师治安及武库军器，辖左右中侯、千牛等宿卫。"
+              },
+              {
+                "id": "qin_jiangzuo",
+                "name": "将作少府",
+                "type": "office",
+                "description": "主管宫室与国家工程，辖石室令、校令，役使大量徒工。"
+              },
+              {
+                "id": "qin_tianshuguo",
+                "name": "典属国",
+                "type": "office",
+                "description": "专掌召抚西南诸夷以及羁縻部族。"
+              },
+              {
+                "id": "qin_zhianshi",
+                "name": "詹事（太子卿）",
+                "type": "office",
+                "description": "统太子宫臣，辖家令、率更令、卫率、中庶子、洗马等。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qin_military",
+        "name": "武官体系",
+        "type": "central_inner",
+        "node_kind": "category",
+        "description": "国尉、护军都尉与各级将军构成中央军事统帅系统。",
+        "children": [
+          {
+            "id": "qin_guowei",
+            "name": "国尉",
+            "type": "office",
+            "description": "最高武职，统领诸军并考核将帅，掌兵符。"
+          },
+          {
+            "id": "qin_hujun",
+            "name": "护军都尉",
+            "type": "office",
+            "description": "掌军政，统中护军、领军史以监督诸将军行军。"
+          },
+          {
+            "id": "qin_generals",
+            "name": "将军体系",
+            "type": "group",
+            "description": "置前、后、左、右将军以及上将军，位上卿，临时出征则以金印紫绶。"
+          }
+        ]
+      },
+      {
+        "id": "qin_local",
+        "name": "地方郡县",
+        "type": "local",
+        "node_kind": "category",
+        "description": "郡县制配合监察与军政官，严格受中央节制。",
+        "children": [
+          {
+            "id": "qin_jun",
+            "name": "郡官",
+            "type": "local_level",
+            "children": [
+              { "id": "qin_junshou", "name": "郡守", "type": "local_office", "description": "郡长官，秩二千石，掌政令并任命属吏（监察与郡尉除外）。" },
+              { "id": "qin_jinyushi", "name": "监御史", "type": "local_supervision", "description": "由御史台派驻，监察郡守违法并奏劾。" },
+              { "id": "qin_junwei", "name": "郡尉", "type": "local_office", "description": "主管郡驻军与治安，银印青绶，直属朝廷。" },
+              { "id": "qin_juncheng", "name": "郡丞 / 长史", "type": "local_office", "description": "辅佐郡守或主兵政，辖主簿、司马、牧师令等。" }
+            ]
+          },
+          {
+            "id": "qin_county",
+            "name": "县官",
+            "type": "local_level",
+            "children": [
+              { "id": "qin_xianling", "name": "县令 / 县长", "type": "local_office", "description": "按户数设令或长，掌县治，秩千石以上或六百石。" },
+              { "id": "qin_xiancheng", "name": "县丞", "type": "local_office", "description": "主管文书、仓库、狱政，秩四百石。" },
+              { "id": "qin_xianwei", "name": "县尉", "type": "local_office", "description": "掌治安缉捕，秩与县丞同。" },
+              { "id": "qin_functionaries", "name": "功曹与吏员", "type": "group", "description": "功曹掌考课，令史/狱掾/仓吏/厩驺处理各项事务。" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qin_grassroots",
+        "name": "乡亭基层",
+        "type": "local_special",
+        "description": "县下设乡、亭、里三级，乡官兼徭役组织。",
+        "children": [
+          { "id": "qin_sanlao", "name": "三老", "type": "local_office", "description": "乡老德者，负责教化并荐举孝廉。" },
+          { "id": "qin_youjiu", "name": "游徼", "type": "local_office", "description": "巡察缉捕的徭役兵。"},
+          { "id": "qin_tingzhang", "name": "亭长", "type": "local_office", "description": "乡亭吏职，掌治安与徭役分配。"},
+          { "id": "qin_shefu", "name": "啬夫 / 有秩", "type": "local_office", "description": "调解乡里事务并协助征税徭役。"}
+        ]
+      }
+    ]
+  }
+}

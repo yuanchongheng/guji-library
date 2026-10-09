@@ -1,0 +1,138 @@
+{
+  "id": "tang",
+  "title": "唐朝官制",
+  "meta": {
+    "period": "公元618年—907年",
+    "notes": [
+      "三省六部体制成熟，决策与执行分离并形成政事堂",
+      "州县制逐渐演变为道、州、县三级，安史后节度使坐大"
+    ]
+  },
+  "root": {
+    "id": "tang_emperor",
+    "name": "唐皇帝",
+    "type": "sovereign",
+    "description": "皇帝通过三省、御史台与内制系统统筹全国政务，宰相多名并置。",
+    "children": [
+      {
+        "id": "tang_central",
+        "name": "三省六部",
+        "type": "central_branch",
+        "description": "中书省草拟、门下省审核、尚书省执行，构成唐代政务核心。",
+        "children": [
+          {
+            "id": "tang_zhongshu",
+            "name": "中书省",
+            "type": "central_inner",
+            "description": "中书令（正三品，后升从二品）与中书侍郎掌诏敕起草，中书舍人署表章并得“五花判事”。",
+            "details": { "notes": "翰林学士承旨掌内制，成为“内相”，与外制中书舍人对应。" }
+          },
+          {
+            "id": "tang_menxia",
+            "name": "门下省",
+            "type": "central_inner",
+            "description": "侍中为长官，黄门侍郎与给事中协助封驳诏敕，并置左散骑常侍、谏议大夫等谏官。"
+          },
+          {
+            "id": "tang_shangshu",
+            "name": "尚书省与六部",
+            "type": "central_outer",
+            "description": "尚书令例不授人，由左、右仆射掌印，统六部尚书、侍郎及四司郎中员外郎执行政令。",
+            "children": [
+              { "id": "tang_libu", "name": "吏部", "type": "office", "description": "主管官吏选授与考课。"},
+              { "id": "tang_hubu", "name": "户部", "type": "office", "description": "掌户籍、赋役与财政计会。"},
+              { "id": "tang_libu2", "name": "礼部", "type": "office", "description": "掌礼乐仪制、贡举科举。"},
+              { "id": "tang_bingbu", "name": "兵部", "type": "office", "description": "掌兵籍、武官任命与军机递送。"},
+              { "id": "tang_xingbu", "name": "刑部", "type": "office", "description": "掌司法行政，并与大理寺、御史台组成“三司推事”。"},
+              { "id": "tang_gongbu", "name": "工部", "type": "office", "description": "掌工程营造、河渠水利。"}
+            ]
+          },
+          {
+            "id": "tang_zaixiang",
+            "name": "宰相体制",
+            "type": "group",
+            "description": "三省长官皆为宰相，常以“同中书门下平章事”“检校官”等头衔参与机务，政事堂设五房日常议政。"
+          }
+        ]
+      },
+      {
+        "id": "tang_supervision",
+        "name": "台院与寺监",
+        "type": "palace",
+        "description": "御史台及九寺五监等机构负责监察、礼仪与专业行政。",
+        "children": [
+          {
+            "id": "tang_yushitai",
+            "name": "御史台",
+            "type": "office",
+            "description": "御史大夫统台院、殿院、察院，侍御史纠察百僚，殿中侍御史掌礼仪，监察御史巡按诸道。"
+          },
+          {
+            "id": "tang_jiusi",
+            "name": "九寺五监",
+            "type": "group",
+            "description": "太常、光禄、卫尉、宗正、太仆、大理、鸿胪、司农、太府等九寺与国子、少府、将作、都水、军器等五监负责宗庙礼乐、宿卫、审刑、教育、工官与水利。"
+          },
+          {
+            "id": "tang_lingwai",
+            "name": "令外之官",
+            "type": "system",
+            "description": "安史后设节度使、盐铁使、度支使、观察使等天子直属机构，握有财政军政实权。"
+          }
+        ]
+      },
+      {
+        "id": "tang_local",
+        "name": "地方行政",
+        "type": "local",
+        "description": "前期州县二级制，后期发展为道、州（府）、县三级，并在边疆设都督府与都护府。",
+        "children": [
+          {
+            "id": "tang_dao",
+            "name": "道与节度使",
+            "type": "local_special",
+            "description": "监察区称“道”，玄宗增至十五道；安史后各道设节度使或观察使统军政财政，形成藩镇。"
+          },
+          {
+            "id": "tang_zhou",
+            "name": "州 / 府",
+            "type": "local_level",
+            "description": "刺史（或太守）为长官，下设别驾、长史、司马及司功、司户、司兵等曹参军，由录事参军事统领。"
+          },
+          {
+            "id": "tang_county",
+            "name": "县",
+            "type": "local_level",
+            "description": "县令掌县治，配县丞、县尉、主簿，以下有乡、里组织。"
+          },
+          {
+            "id": "tang_tudufu",
+            "name": "都督府 / 都护府",
+            "type": "local_special",
+            "description": "统十州以上称大都督府，多由亲王遥领；边疆设六都护府及羁縻府州，由当地首领世袭。"
+          }
+        ]
+      },
+      {
+        "id": "tang_systems",
+        "name": "官品与俸禄",
+        "type": "system",
+        "description": "九品三十等配爵勋散官，配以年禄、月俸、职田与赎刑制度。",
+        "children": [
+          {
+            "id": "tang_pinji",
+            "name": "品阶与散官",
+            "type": "system_item",
+            "description": "正从一品至九品列举三师三公、六部尚书、御史大夫等主要官阶；附带开府仪同三司、金紫光禄大夫等散官称号。"
+          },
+          {
+            "id": "tang_salary",
+            "name": "俸禄制度",
+            "type": "system_item",
+            "description": "年禄以石为单位，永徽后增月俸与禄米；官员可领职田、永业田，晚期多折发钱帛。"
+          }
+        ]
+      }
+    ]
+  }
+}

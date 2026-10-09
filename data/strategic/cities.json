@@ -1,0 +1,461 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"title": "襄阳"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.1545944, 32.0168742]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "洛阳"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.4583256, 34.6203018]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "开封"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.3059162, 34.792159]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "南京（建康、金陵）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [118.7971687, 32.060538]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "汉中（南郑）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [107.0250247, 33.0676566]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "成都"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.065798, 30.6582841]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "重庆"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.5705782, 29.5557555]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "北京（幽州、蓟）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4043999, 39.9107453]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "太原（晋阳）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.5566863, 37.8669526]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "荆州（江陵）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.2284248, 30.329686]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "武汉（武昌）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.2873674, 30.5942492]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "南阳（宛）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.5324411, 32.986556]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "商丘（睢阳）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [115.6571991, 34.4216388]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "汝南"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.3536408, 33.0010257]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "寿县（寿春、寿阳）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.7855997, 32.5692312]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "信阳（义阳）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.0898351, 32.1397089]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "荥阳"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.3880578, 34.7856123]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "许昌"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.8504048, 34.0327466]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "石家庄正定（真定、常山）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.5101252, 38.0428113]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "定州（中山）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.9946063, 38.5128406]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "河间"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.0896747, 38.4408093]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "邯郸"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.4917266, 36.6101462]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "临漳（邺城，安阳北侧）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.5975237, 36.337937]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "邢台"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.5027185, 37.0673611]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "安阳"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.3846199, 36.095503]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "大名"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [115.1732247, 36.2814985]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "宣化"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [115.0571442, 40.5954386]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "张家口"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.8853957, 40.7703947]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "大同（平城）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.2980031, 40.0813109]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "代县（代州）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.9609966, 39.0675064]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "长治（上党）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.1094947, 36.1934395]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "临汾（平阳）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.5212289, 36.0832957]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "济南（历下）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [117.1258549, 36.682248]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "青州"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [118.4852873, 36.6880297]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "泰安"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [117.091677, 36.1942015]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "济宁"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.6004762, 35.405624]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "临沂（沂州）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [118.3591809, 35.0893559]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "徐州（彭城）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [117.214971, 34.2562154]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "扬州（广陵）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [119.4198783, 32.3928549]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "淮安（山阳）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [119.1180946, 33.5552642]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "盱眙"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [118.5451416, 33.0099511]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "凤阳（钟离）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [117.5435043, 32.8831833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "和县（历阳）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [118.3529766, 31.7417367]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "镇江（京口）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [119.452854, 32.1960891]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "当涂"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [118.4999933, 31.5698987]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "合肥（庐州）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [117.2719915, 31.8497031]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "宜昌（西陵、夷陵）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.2968609, 30.6893631]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "奉节（夔州）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [109.4637676, 31.0174041]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "绵阳（涪城）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.7328407, 31.4728806]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "巴中"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.7648257, 31.854442]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "阆中"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.0050103, 31.556369]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "广元"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.8437385, 32.4345909]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "西安（长安）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [108.9467239, 34.2645684]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "天水（上邽）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [105.725058, 34.5806583]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "固原（安定）"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.2435775, 36.0099774]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "武威"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.632095, 37.927926]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"title": "酒泉"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [98.495743, 39.731458]
+      }
+    }
+  ]
+}

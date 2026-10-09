@@ -1,0 +1,97 @@
+[
+  {
+    "name": "商",
+    "year": -1200,
+    "file": "商(公元前1200年).geojson"
+  },
+  {
+    "name": "周",
+    "year": -600,
+    "file": "周(公元前600年).geojson"
+  },
+   {
+    "name": "战国-404",
+    "year": -404,
+    "file": "战国-前404.geojson"
+  },
+  {
+    "name": "战国-403",
+    "year": -403,
+    "file": "战国-前403.geojson"
+  },
+  {
+    "name": "战国-256",
+    "year": -256,
+    "file": "战国(公元前256年).geojson"
+  },
+  {
+    "name": "秦",
+    "year": -223,
+    "file": "秦(公元前223年).geojson"
+  },
+  {
+    "name": "西汉",
+    "year": -202,
+    "file": "西汉(公元前202年).geojson"
+  },
+  {
+    "name": "西汉",
+    "year": -109,
+    "file": "西汉(公元前109年).geojson"
+  },
+  {
+    "name": "西汉",
+    "year": -82,
+    "file": "西汉(公元前82年).geojson"
+  },
+  {
+    "name": "东汉",
+    "year": 29,
+    "file": "东汉(公元29年).geojson"
+  },
+  {
+    "name": "东汉",
+    "year": 73,
+    "file": "东汉(公元73年).geojson"
+  },
+  {
+    "name": "东汉",
+    "year": 174,
+    "file": "东汉(公元174年).geojson"
+  },
+  {
+    "name": "三国",
+    "year": 262,
+    "file": "三国(公元262年).geojson"
+  },
+  {
+    "name": "东晋",
+    "year": 327,
+    "file": "东晋(公元327年).geojson"
+  },
+  {
+    "name": "东晋和前秦",
+    "year": 382,
+    "file": "东晋和前秦(公元382年).geojson"
+  },
+  {
+    "name": "南北朝",
+    "year": 546,
+    "file": "南北朝(公元546年).geojson"
+  },
+  {
+    "name": "南北朝",
+    "year": 572,
+    "file": "南北朝(公元572年).geojson"
+  },
+  {
+    "name": "唐",
+    "year": 741,
+    "file": "唐(公元741年).geojson"
+  },
+  {
+    "name": "五代十国",
+    "year": 910,
+    "file": "五代十国(公元910年).geojson"
+  }
+]

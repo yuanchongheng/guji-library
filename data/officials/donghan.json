@@ -1,0 +1,148 @@
+{
+  "id": "donghan",
+  "title": "东汉官制",
+  "meta": {
+    "period": "公元25年—220年",
+    "notes": [
+      "沿袭西汉名号，但权力集中于皇帝与尚书台，内朝势力兴起",
+      "地方形成州—郡—县三级，刺史与州牧成为实权长官"
+    ]
+  },
+  "root": {
+    "id": "han_emperor",
+    "name": "皇帝",
+    "type": "sovereign",
+    "description": "东汉皇帝透过录尚书事、宦官与外戚掌控朝政，三公多为虚位。",
+    "children": [
+      {
+        "id": "han_central",
+        "name": "中央政府",
+        "type": "central_branch",
+        "description": "三公九卿名义上总领百僚，实权转入尚书台与内朝机要。",
+        "children": [
+          {
+            "id": "han_neichao",
+            "name": "内朝 / 尚书台",
+            "type": "central_inner",
+            "description": "皇帝多以太傅或太尉录尚书事，尚书台六曹处理各部政务。",
+            "children": [
+              {
+                "id": "han_taifu",
+                "name": "太傅",
+                "type": "office",
+                "description": "太子师傅与内朝首辅，常被任命为录尚书事以总揽政务。",
+                "details": { "notes": "赵熹、邓彪、张禹等均以太傅掌政；多设长史与二十四掾属。" }
+              },
+              {
+                "id": "han_shangshu",
+                "name": "尚书台六曹",
+                "type": "group",
+                "description": "由少府属官改制成吏、三公、客、驾、屯田、度支六曹侍郎，左右丞统理，承受天下奏事。"
+              },
+              {
+                "id": "han_shizhong",
+                "name": "侍中与侍中寺",
+                "type": "office",
+                "description": "侍中由加官改为实职，设寺署隶少府，掌顾问、传命与近侍。",
+                "details": { "notes": "侍中寺成为皇帝内廷的常设官署，与黄门侍郎等共掌机要。" }
+              }
+            ]
+          },
+          {
+            "id": "han_three_excellencies",
+            "name": "三公",
+            "type": "central_outer",
+            "description": "太尉、司徒、司空位在上公之下，领九卿但多为虚职，偶由灾异被策免。",
+            "children": [
+              {
+                "id": "han_taiwei",
+                "name": "太尉",
+                "type": "office",
+                "description": "掌四方兵事考课，岁终奏殿最并行赏罚，领太常、光禄勋、卫尉三卿。",
+                "details": { "notes": "太尉府设长史、西曹、东曹、户曹、奏曹等十二余曹，名义上管辖广泛。" }
+              },
+              {
+                "id": "han_situ",
+                "name": "司徒",
+                "type": "office",
+                "description": "掌人民教化、礼仪与四方功课，领太仆、廷尉、大鸿胪。",
+                "details": { "notes": "仍以大司徒旧名，掾属三十余人。" }
+              },
+              {
+                "id": "han_sikong",
+                "name": "司空",
+                "type": "office",
+                "description": "掌水土营造、城防与宫室工程，建安十三年一度改称御史大夫，领宗正、大司农、少府。",
+                "details": { "notes": "府署留长史、二十九掾属与四十余令史。" }
+              }
+            ]
+          },
+          {
+            "id": "han_jiuqing",
+            "name": "九卿",
+            "type": "central_outer",
+            "description": "太常卿、光禄勋、卫尉、太仆、大鸿胪、廷尉、宗正、大司农、少府，秩中二千石，分属三公。",
+            "children": [
+              { "id": "han_taichang", "name": "太常卿", "type": "office", "description": "掌宗庙礼乐，秩中二千石。" },
+              { "id": "han_guanglu", "name": "光禄勋", "type": "office", "description": "掌宿卫郎官，增置东南西北中郎将，统羽林、虎贲等军。" },
+              { "id": "han_wewei", "name": "卫尉", "type": "office", "description": "掌宫门守卫。" },
+              { "id": "han_taipu", "name": "太仆", "type": "office", "description": "掌乘舆车马与马政。" },
+              { "id": "han_dahonglu", "name": "大鸿胪", "type": "office", "description": "外交与接待百蛮诸侯，兼司宾仪礼。" },
+              { "id": "han_tingwei", "name": "廷尉", "type": "office", "description": "最高审判机关，复核京师重大案件。" },
+              { "id": "han_zongzheng", "name": "宗正", "type": "office", "description": "掌宗室谱籍与亲属司法。" },
+              { "id": "han_dasinong", "name": "大司农", "type": "office", "description": "掌全国财政、田赋、盐铁与漕运。" },
+              { "id": "han_shaofu", "name": "少府", "type": "office", "description": "掌宫廷财物与尚书台，分吏曹、三公曹、主客曹等六曹。" }
+            ]
+          },
+          {
+            "id": "han_generals",
+            "name": "将军与五府",
+            "type": "central_inner",
+            "description": "大将军、骠骑、车骑、卫将军等与三公合称五府，外戚常以大将军执政。",
+            "children": [
+              { "id": "han_dajiangjun", "name": "大将军", "type": "office", "description": "位在三公上，开府置长史、司马，从事中郎等，掌禁军；外戚临朝常领此职。" },
+              { "id": "han_zahu", "name": "杂号将军", "type": "group", "description": "度辽将军等临时设，汉灵帝又置西园八校尉以宦官领兵。" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "han_local",
+        "name": "地方体系",
+        "type": "local",
+        "description": "形成司隶区与十二州，刺史/州牧成为一级长官，郡国与县制沿袭汉制。",
+        "children": [
+          {
+            "id": "han_province",
+            "name": "州与刺史/州牧",
+            "type": "local_level",
+            "description": "洛阳以外划十二州，设刺史巡行郡国；建武十八年改刺史，灵帝再改州牧，秩二千石，掌军政监察。",
+            "details": { "notes": "司隶校尉部辖京畿七郡，秩比二千石，统武警一千二百人，有三独坐之礼。" }
+          },
+          {
+            "id": "han_commanderies",
+            "name": "郡国",
+            "type": "local_level",
+            "description": "全国设王国、列郡与司隶七郡。王国置傅、相、中尉，郡置太守、丞、长史。",
+            "children": [
+              { "id": "han_taishou", "name": "太守 / 河南尹", "type": "local_office", "description": "郡长官，秩二千石；河南尹位比九卿。" },
+              { "id": "han_junzhangshi", "name": "长史与司马", "type": "local_office", "description": "长史掌军政，司马负责实际军事调度。" },
+              { "id": "han_duwei", "name": "属国都尉", "type": "local_office", "description": "边郡不置太守而置都尉或属国都尉领军并辖县。" }
+            ]
+          },
+          {
+            "id": "han_county",
+            "name": "县与侯国",
+            "type": "local_level",
+            "description": "县为基层行政，万户以上置县令，以下置县长，并设县丞、县尉。",
+            "children": [
+              { "id": "han_county_magistrate", "name": "县令/县长", "type": "local_office", "description": "掌县政，秩千石或三百至六百石。" },
+              { "id": "han_county_staff", "name": "县属官", "type": "group", "description": "县丞掌民政文书，县尉掌治安，另置盐官、铁官、水官等派出机构。" },
+              { "id": "han_houguo", "name": "侯国与邑", "type": "fief", "description": "列侯封邑称侯国，置相、家丞、庶子；皇后、公主封地称邑，置令或长。" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
