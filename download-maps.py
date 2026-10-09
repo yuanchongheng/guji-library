@@ -7,6 +7,7 @@ cache=root/'data/reference-cache'
 items={i['oss_filename']:i for g in json.loads((root/'data/atlas.json').read_text()) for i in g['items']}
 manifest=root/'data/local-maps.json'
 saved=json.loads(manifest.read_text()) if manifest.exists() else {}
+if not manifest.exists():manifest.write_text('{}')
 def get(url,body=None):
     delay=900
     while True:
