@@ -37,6 +37,6 @@ for filename,item in items.items():
             saved[filename]='assets/history-maps/'+filename
             manifest.write_text(json.dumps(saved,ensure_ascii=False))
             count+=1
-            print('Map saved',len(saved),'/',len(items),filename,flush=True)
+            print('Maps saved:',len(saved),'/',len(items),flush=True)
         except Exception as error:print(str(error),'retry next scheduled run',flush=True);raise SystemExit(0)
 print('Downloaded maps:',len(saved),'/',len(items),flush=True)
