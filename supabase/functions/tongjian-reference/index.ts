@@ -9,7 +9,7 @@ const u=new URL(req.url);const endpoint=u.searchParams.get("endpoint")||"";if(!O
 u.searchParams.delete("endpoint");for(const [k,v]of u.searchParams){if(!endpoints[endpoint].includes(k)||v.length>500)return fail("查询参数无效",400)}
 let target="https://www.dutongjian.com/api/"+(endpoint==="map/search"?"search_map":endpoint);
 let options:RequestInit={signal:AbortSignal.timeout(25000)};
-if(endpoint==="map/labels"){const key=u.searchParams.get("key")||"";if(!/^[a-zA-Z0-9_/-]+$/.test(key)||key.includes(".."))return fail("地图编号无效",400);target="https://www.dutongjian.com/map_images/data/"+key+"_phrases.json"}
+if(endpoint==="map/labels"){const key=u.searchParams.get("key")||"";if(!key||key.length>300||key.includes("..")||key.startsWith("/")||key.includes("\\"))return fail("地图编号无效",400);target="https://www.dutongjian.com/map_images/data/"+key.split("/").map(encodeURIComponent).join("/")+"_phrases.json"}
 else if(["map/image-url","map/search"].includes(endpoint)){options={...options,method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(Object.fromEntries(u.searchParams))}}
 else target+="?"+u.searchParams;
 const response=await fetch(target,options);if(!response.ok)return fail("补充资料来源暂不可用，请稍后重试");

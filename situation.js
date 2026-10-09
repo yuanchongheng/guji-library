@@ -15,7 +15,7 @@ async function situationDialog(paragraph=state.paragraph||0){
  try{
  const data=await situationStatic();if(stamp!==referenceState.dialogStamp||!$('#dialog').open)return;
  const importedScene=data['paragraph-scenes'].scenes[p?.tongjian_id];
- const map=situationMap=L.map('situation-map',{zoomControl:false,preferCanvas:true,zoomSnap:.1}).setView([35.3,111.4],5.8);L.control.zoom({position:'topright'}).addTo(map);L.control.scale({imperial:false,position:'bottomleft'}).addTo(map);
+ const map=situationMap=L.map('situation-map',{zoomControl:false,preferCanvas:true,zoomSnap:.1,zoomDelta:.5,wheelPxPerZoomLevel:35,wheelDebounceTime:20}).setView([35.3,111.4],5.8);L.control.zoom({position:'topright'}).addTo(map);L.control.scale({imperial:false,position:'bottomleft'}).addTo(map);
  const attribution='地图数据 © OpenStreetMap contributors · 地形 © Esri · 战略地理参考：读通鉴';
  const bases={terrain:L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}',{attribution,maxNativeZoom:13,maxZoom:17}),basic:L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution,maxZoom:19}),image:L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{attribution,maxZoom:19})};let base=bases.terrain.addTo(map);
  const layers={modern:L.tileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',{maxZoom:17,opacity:.8}),hill:L.tileLayer('https://www.dutongjian.com/sandbox/hillshade/hillshade_z15_90m_z8_11/{z}/{x}/{y}.png',{minZoom:5,maxNativeZoom:11,maxZoom:12,opacity:.3})};
